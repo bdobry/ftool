@@ -7,9 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" href="assets/ico/favicon.ico">
-
   <title>Famitool</title>
-
   <!-- Bootstrap core CSS -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Bootstrap theme -->
@@ -18,7 +16,10 @@
 
 <body>
   <div class="container-fluid hero-unit">
-    <img class="logo" src="http://placehold.it/100x37/ffffff/?text=logo" alt="logo">
+    <img class="logo" src="http://placehold.it/100x37/?text=logo" alt="logo">
+    <img class="cloud" src="img/cloud.png" alt="">
+    <img class="cloud" src="img/cloud.png" alt="">
+    <img class="cloud" src="img/cloud.png" alt="">
     <div class="container">
       <div class="col-xs-12 text-center">
         <h1>Rækker din fantasi også kun hen til legepladsen?</h1>
@@ -30,71 +31,115 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="col-xs-9 col-centered">
-      <h3>a</h3>
-      <p class="subtitle">b</p>
+  <div class="city">
+    <div class="container">
+      <div class="col-xs-9 col-centered text-center">
+        <h2>Find eller genfind aktiviteter for børn i dit lokalområde</h2>
+        <p class="subtitle">Famitool er din daglige inspirationskilde til aktiviteter nær dig</p>
+        <a class="button" href="">UDFORSK APP'EN</a>
+      </div>
+    </div>
+    <div class="city-area">
+      <img class="city-bg" src="img/city-bg.png" alt="">
+      <div class="city-luft"> <img class="luftbaloon" src="img/luftbaloon.png" alt="luftbaloon"></div>
+      <img class="city-tree" src="img/tree2@3x.png" alt="">
+      <img class="city-tree" src="img/tree2@3x.png" alt="">
+      <img class="city-tree" src="img/tree2@3x.png" alt="">
+      <img class="city-tree" src="img/tree1@3x.png" alt="">
+      <img class="city-tree" src="img/tree1@3x.png" alt="">
+      <img class="city-tree" src="img/tree1@3x.png" alt="">
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="assets/js/docs.min.js"></script>
+  <div class="container grass">
+    <div class="row">
+      <div class="col-xs-9 col-centered text-center">
+        <p class="subtitle">Famitool er din daglige inspirationskilde til aktiviteter nær dig</p>
+      </div>
+    </div>
+  </div>
+
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include ScrollMagic and GSAP plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+
   <script>
-    var $nav = $('button.navbar-toggle');
-    var toggle;
-
-    /* Sticky navgiation toggle */
-    $nav.on('click', function () {
-      toggle = !toggle;
-      if ($(window).scrollTop() < 235 && toggle == true) {
-        $('nav').addClass("slide-up");
-      } else {
-        $('nav').removeClass("slide-up");
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: "onLeave"
       }
     });
 
-    $(window).scroll(function () {
-      if ($(window).scrollTop() >= 235) {
-        $('nav').removeClass("slide-up");
-      } else if ($(window).scrollTop() < 235 && toggle == true) {
-        $('nav').addClass("slide-up");
+    var pinani = new TimelineMax()
+      .add(TweenMax.to(".cloud", 100, {
+        transform: "translateX(0)"
+      }))
 
-      }
-    });
-
-    /* Smooth scroll + 55px offset */
-    $('a[href*=#]:not([href=#])').click(function () {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 55
-          }, 500);
-          return false;
-        }
-      }
-    });
-  </script>
-  <script>
-    /* adjust doc height on sticky for smoother experience */
-    $(document).on('scroll', function () {
-      $('nav').each(function () {
-        if ($(this).hasClass('affix')) {
-          $('#menu2').addClass("height-adjust");
-        } else {
-          $('#menu2').removeClass("height-adjust");
-        }
-      });
-    });
-    /* Sticky navgiation top */
-    $('nav').affix({
-      offset: {
-        top: $('nav').offset().top
-      }
-    });
+    new ScrollMagic.Scene({
+        triggerElement: "section#pin",
+        duration: '100%'
+      })
+      .setTween(pinani)
+      .setTween(".cloud", 1, {
+        //        left: "+=30%"
+        left: "50%"
+      })
+      .addTo(controller);
   </script>
 </body>
 

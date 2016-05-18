@@ -10,8 +10,8 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false,
-            "custom.work.toggleToolbar": false
+            "linting.collapsed": true,
+            "custom.work.toggleToolbar": true
         },
         "sass/bootstrap/bootstrap.scss": {
             "sass.enabled": true,

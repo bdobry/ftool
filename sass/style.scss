@@ -23,21 +23,39 @@ body {
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 33px;
   font-weight: $medium;
 }
 
 p.subtitle {
   font-size: 16px;
+  padding-top: 22px;
+  padding-bottom: 26px;
+  line-height: 16px;
+}
+
+.button {
+  background: $green;
+  box-shadow: 0px 1px 0px 0px #2eab69;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3px;
+  width: 170px;
+  height: 44px;
+  line-height: 44px;
+  color: white;
+  &:hover {
+    font-weight: bolder;
+    text-decoration: none;
+    color: $green/4;
+  }
 }
 
 
 /* --- hero --- */
 
 .hero-unit {
-  background-size: cover;
-  background-image: url('http://placehold.it/1500x1500&text=Hero');
-  background-color: #EEEEEE;
+  background-color: white;
   height: 600px;
   padding-top: 200px;
   .logo {
@@ -62,11 +80,6 @@ p.subtitle {
       width: 30%;
       border-radius: 3px;
     }
-    .subtitle {
-      padding-top: 22px;
-      padding-bottom: 26px;
-      line-height: 16px;
-    }
   }
   .stick-bottom {
     position: absolute;
@@ -83,22 +96,103 @@ p.subtitle {
   }
 }
 
-.button {
-  background: $green;
-  box-shadow: 0px 1px 0px 0px #2eab69;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 3px;
-  width: 170px;
-  height: 44px;
-  line-height: 44px;
-  color: white;
-  &:hover {
-    font-weight: bolder;
-    text-decoration: none;
-    color: $green/4;
+.cloud {
+  position: absolute;
+  top: 100px;
+  left: -5%;
+  height: 150px;
+  z-index: 0;
+  &:nth-of-type(2) {
+    top: 380px;
+    left: 10%;
+  }
+  &:nth-of-type(3) {
+    top: 20px;
+    left: 70%;
   }
 }
+
+
+/* --- city --- */
+
+.city {
+  position: relative;
+  .container {
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  h2,
+  p {
+    color: white;
+    top: 20%;
+  }
+}
+
+.city-area {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  background: #33B3BE;
+  height: 750px;
+  overflow: hidden;
+  .city-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+  }
+  .city-luft {
+    width: 6%;
+    position: absolute;
+    top: 15%;
+    z-index: 9;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation: luftbaloon 100s ease infinite;
+    animation: luftbaloon 100s ease infinite;
+    .luftbaloon {
+      position: absolute;
+      width: 200%;
+      z-index: 100;
+      top: 10%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+  .city-tree {
+    position: absolute;
+    width: 5%;
+    bottom: 0;
+    left: 10%;
+    &:nth-of-type(2) {
+      left: 37%;
+    }
+    &:nth-of-type(3) {
+      left: 43%;
+    }
+    &:nth-of-type(4) {
+      left: 77%;
+    }
+    &:nth-of-type(5) {
+      left: 80%;
+    }
+    &:nth-of-type(6) {
+      left: 40%;
+    }
+  }
+}
+/* --- city --- */
 
 // over mobile
 @media all and (min-width: 767px) {}
@@ -132,3 +226,54 @@ $desktop: "only screen and (max-width : 320px)";
 
 
 /* --- That's all Folks! --- */
+
+
+@-webkit-keyframes luftbaloon {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  10% {
+    top: 20%;
+  }
+  25% {
+    top: 45%;
+  }
+  50% {
+    top: 30%;
+  }
+  58% {
+    top: 10%;
+  }
+  100% {
+    -webkit-transform: translate3d(1700%, 0, 0);
+    -ms-transform: translate3d(1700%, 0, 0);
+    transform: translate3d(1700%, 0, 0);
+  }
+}
+
+@keyframes luftbaloon {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  10% {
+    top: 20%;
+  }
+  25% {
+    top: 45%;
+  }
+  50% {
+    top: 30%;
+  }
+  58% {
+    top: 10%;
+  }
+  100% {
+    -webkit-transform: translate3d(1700%, 0, 0);
+    -ms-transform: translate3d(1700%, 0, 0);
+    transform: translate3d(1700%, 0, 0);
+  }
+}
