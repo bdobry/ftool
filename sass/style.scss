@@ -34,6 +34,13 @@ p.subtitle {
   line-height: 16px;
 }
 
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 70px;
+  z-index: 100;
+}
+
 .button {
   background: $green;
   box-shadow: 0px 1px 0px 0px #2eab69;
@@ -57,12 +64,7 @@ p.subtitle {
 .hero-unit {
   background-color: white;
   height: 600px;
-  padding-top: 200px;
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 70px;
-  }
+  padding-top: 190px;
   .container {
     height: 100%;
     position: relative;
@@ -192,8 +194,36 @@ p.subtitle {
     }
   }
 }
+
+
 /* --- city --- */
 
+.grass {
+  width: 100%;
+  background: $green;
+  height: 150px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 50% solid transparent;
+    border-right: 50% solid transparent;
+    border-top: 20px solid #000;
+    clear: both;
+    z-index: 100;
+  }
+}
+
+/* --- footer --- */
+footer {
+  margin-top: 39px;
+  .logo {
+    position: relative;
+  }
+}
 // over mobile
 @media all and (min-width: 767px) {}
 
@@ -226,7 +256,6 @@ $desktop: "only screen and (max-width : 320px)";
 
 
 /* --- That's all Folks! --- */
-
 
 @-webkit-keyframes luftbaloon {
   0% {
