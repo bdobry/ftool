@@ -1,0 +1,55 @@
+/* --- Bartosz Dobry: famitool website--- */
+
+@import "bootstrap";
+@import "bootstrap/theme";
+
+/* --- colors --- */
+
+$black: #4a4a4a;
+$white: #ffffff;
+$green:#3fc57e;
+$line-height: 22px;
+
+/* --- body starts here --- */
+
+body {
+  min-width: 320px;
+}
+
+
+/* --- hero --- */
+
+.hero-unit {
+  background-image: url('http://franklincode.coursekit.com.s3.amazonaws.com/30e1ceef65aa4ba1a1bb66056eeb09b6/sass/img/onboarding-bg.jpg');
+  background-size: cover;
+  background-color: #EEEEEE;
+  height: 450px;
+}
+
+// over mobile
+@media all and (min-width: 767px) {}
+
+// tablets
+@media all and (max-width: 992px) and (min-width: 768px) {}
+
+// over tablets
+@media all and (min-width: 996px) {}
+
+@media all and (max-width: 1199px) and (min-width: 993px) {}
+
+@media all and (min-width: 1200px) {}
+
+// test for breakpoints
+$mobile: "all and (max-width: 992px) and (min-width: 768px)";
+$tablets: "only screen and (max-width : 320px)";
+$tablets: "only screen and (max-width : 320px)";
+$desktop: "only screen and (max-width : 320px)";
+@media #{$mobile} {
+//  background: red;
+}
+
+
+/* --- LOONEY TUNES --- */
+
+
+/* --- That's all Folks! --- */
