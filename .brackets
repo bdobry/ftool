@@ -1,0 +1,27 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "sass/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "custom.work.toggleToolbar": true
+        },
+        "sass/bootstrap/bootstrap.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false
+        }
+    }
+}
