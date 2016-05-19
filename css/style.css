@@ -6784,4 +6784,9 @@ footer {
     -ms-transform: translate3d(1700%, 0, 0);
     transform: translate3d(1700%, 0, 0); } }
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
 /*# sourceMappingURL=style.css.map */

@@ -335,3 +335,9 @@ $desktop: "only screen and (max-width : 320px)";
     transform: translate3d(1700%, 0, 0);
   }
 }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
