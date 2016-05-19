@@ -6808,18 +6808,20 @@ p.subtitle {
     color: white; }
 
 /* --- footer --- */
-footer {
-  margin-top: -90px;
-  padding-top: 10px;
-  padding-bottom: 40px;
+.footer {
+  margin-top: -80px;
   vertical-align: middle;
   opacity: .99;
-  background: white; }
-  footer .logo-footer {
+  background: white;
+  height: 137px;
+  width: 100%; }
+  .footer footer {
+    padding: 40px; }
+  .footer .logo-footer {
     width: 108px; }
-  footer .contact {
+  .footer .contact {
     color: #4a4a4a; }
-    footer .contact p {
+    .footer .contact p {
       margin-top: 0;
       font-size: 14px;
       font-weight: 300; }
