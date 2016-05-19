@@ -408,11 +408,57 @@ input {
     width: 150px;
   }
   input {
-    width: 50%;
+    width: 58%;
   }
 }
 
+// xs only
+@media all and (max-width: 481px) and (min-width: 320px) {
+  .newsletter {
+    .title {
+      margin-top: 10px;
+    }
+    img {
+      margin-bottom: -50px;
+    }
+    .button {
+      float: none !important;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// xs + medium
 @media all and (max-width: 720px) and (min-width: 320px) {
+  // all subtitles
+  .subtitle {
+    font-size: 16px !important;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  // hero
+  .hero-unit {
+    height: 500px;
+    padding-top: 100px;
+    .cloud {
+      height: 50px;
+    }
+    .container {
+      h1 {
+        font-size: 27px;
+      }
+    }
+    .stick-bottom {
+      bottom: 10px;
+      font-size: 15px;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
   .logo {
     position: absolute;
     top: 20px;
@@ -421,6 +467,22 @@ input {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+// smaller than desktop
+@media all and (max-width: 980px) and (min-width: 320px) {
+  .form {
+    width: 100% !important;
+    display: block;
+    .button {
+      width: 150px;
+      float: right;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 }
 
