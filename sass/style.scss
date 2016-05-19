@@ -72,6 +72,16 @@ p.subtitle {
   }
 }
 
+input {
+  height: 42px;
+  vertical-align: middle;
+  border: 1px solid #d4e7e8;
+  padding-left: 15px;
+  color: $black;
+  width: 30%;
+  border-radius: 3px;
+}
+
 
 /* --- hero --- */
 
@@ -88,15 +98,6 @@ p.subtitle {
       margin-top: 0;
       font-size: 33px;
       font-weight: $medium;
-    }
-    input {
-      height: 42px;
-      vertical-align: middle;
-      border: 1px solid #d4e7e8;
-      padding-left: 15px;
-      color: $black;
-      width: 30%;
-      border-radius: 3px;
     }
   }
   .stick-bottom {
@@ -334,6 +335,9 @@ p.subtitle {
     margin-top: 20px;
     color: white;
   }
+  .button {
+    text-align: center;
+  }
 }
 
 
@@ -359,6 +363,17 @@ p.subtitle {
       font-size: 14px;
       font-weight: 300;
     }
+  }
+}
+
+.form {
+  width: 100% !important;
+  display: block;
+  .button {
+    width: 150px;
+  }
+  input {
+    width: 50%;
   }
 }
 

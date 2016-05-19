@@ -6587,6 +6587,15 @@ p.subtitle {
     text-decoration: none;
     color: #103120; }
 
+input {
+  height: 42px;
+  vertical-align: middle;
+  border: 1px solid #d4e7e8;
+  padding-left: 15px;
+  color: #4a4a4a;
+  width: 30%;
+  border-radius: 3px; }
+
 /* --- hero --- */
 .hero-unit {
   background-color: white;
@@ -6601,14 +6610,6 @@ p.subtitle {
       margin-top: 0;
       font-size: 33px;
       font-weight: 500; }
-    .hero-unit .container input {
-      height: 42px;
-      vertical-align: middle;
-      border: 1px solid #d4e7e8;
-      padding-left: 15px;
-      color: #4a4a4a;
-      width: 30%;
-      border-radius: 3px; }
   .hero-unit .stick-bottom {
     position: absolute;
     text-align: center;
@@ -6806,6 +6807,8 @@ p.subtitle {
   .newsletter .row {
     margin-top: 20px;
     color: white; }
+  .newsletter .button {
+    text-align: center; }
 
 /* --- footer --- */
 .footer {
@@ -6825,6 +6828,14 @@ p.subtitle {
       margin-top: 0;
       font-size: 14px;
       font-weight: 300; }
+
+.form {
+  width: 100% !important;
+  display: block; }
+  .form .button {
+    width: 150px; }
+  .form input {
+    width: 50%; }
 
 .col-centered {
   float: none;
