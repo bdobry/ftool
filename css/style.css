@@ -6561,7 +6561,7 @@ h2 {
   font-weight: 500; }
 
 p.subtitle {
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 22px;
   padding-bottom: 26px;
   line-height: 16px; }
@@ -6602,7 +6602,9 @@ input {
   height: 600px;
   padding-top: 190px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  position: relative;
+  overflow: hidden; }
   .hero-unit .container {
     height: 100%;
     position: relative; }
