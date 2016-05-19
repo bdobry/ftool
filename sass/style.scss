@@ -3,6 +3,9 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500);
+
+/* --- custom grid containers ---*/
+
 @media (min-width: 480px) {
   .container {
     width: 471px;
@@ -70,7 +73,7 @@ p.subtitle {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 70px;
   z-index: 100;
@@ -352,8 +355,9 @@ input {
   background: #33B3BE;
   z-index: 1;
   overflow: hidden;
+  vertical-align: top !important;
   .title {
-    margin-top: 100px;
+    margin-top: -100px;
   }
   .row {
     margin-top: 20px;
@@ -404,37 +408,31 @@ input {
   }
 }
 
-//// over mobile
-//@media all and (min-width: 767px) {}
-//
-//// tablets
-//@media all and (max-width: 992px) and (min-width: 768px) {}
-//
-//// over tablets
-//@media all and (min-width: 996px) {}
-//
-//@media all and (max-width: 1199px) and (min-width: 993px) {}
-//
-//@media all and (min-width: 1200px) {}
-//
-//// test for breakpoints
-//$mobile: "all and (max-width: 992px) and (min-width: 768px)";
-//$tablets: "only screen and (max-width : 320px)";
-//$tablets: "only screen and (max-width : 320px)";
-//$desktop: "only screen and (max-width : 320px)";
-//@media #{$mobile} {
-//  //  background: red;
-//}
+@media all and (max-width: 720px) and (min-width: 320px) {
+  .logo {
+    position: absolute;
+    top: 20px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* --- overwrites and keyframes --- */
+
 .col-centered {
   float: none;
   margin: 0 auto;
 }
 
-
-/* --- LOONEY TUNES --- */
-
-
-/* --- That's all Folks! --- */
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
 
 @-webkit-keyframes luftbaloon {
   0% {
@@ -486,8 +484,8 @@ input {
   }
 }
 
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
+
+/* --- LOONEY TUNES --- */
+
+
+/* --- That's all Folks! --- */
