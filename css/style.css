@@ -6876,11 +6876,12 @@ input {
     font-size: 16px !important; }
   h2 {
     font-size: 27px; }
+  .cloud,
+  .cloud2 {
+    height: 50px !important; }
   .hero-unit {
     height: 500px;
     padding-top: 100px; }
-    .hero-unit .cloud {
-      height: 50px; }
     .hero-unit .container h1 {
       font-size: 27px; }
     .hero-unit .stick-bottom {
@@ -6896,7 +6897,13 @@ input {
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .features {
+    margin-bottom: 100px; }
+    .features .row {
+      margin-top: 50px; }
+    .features img {
+      margin-bottom: 20px; } }
 
 @media all and (max-width: 980px) and (min-width: 320px) {
   .form {
