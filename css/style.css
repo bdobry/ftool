@@ -6549,6 +6549,7 @@ button.close {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
 /* --- colors --- */
+/* --- variables --- */
 /* --- body starts here --- */
 body {
   min-width: 320px;
@@ -6616,7 +6617,8 @@ p.subtitle {
     line-height: 22px;
     font-size: 18px;
     color: #3fc57e;
-    margin-left: -15px; }
+    margin-left: -15px;
+    padding-left: 15px; }
     .hero-unit .stick-bottom:after {
       content: "scroll down";
       display: block; }
@@ -6645,9 +6647,8 @@ p.subtitle {
     background: url(../img/triangle.svg);
     background-size: 100% 100%;
     width: 100%;
-    height: 50px;
-    display: block;
-    fill: white; }
+    height: 60px;
+    display: block; }
   .city .container {
     position: absolute;
     top: 20%;
@@ -6717,7 +6718,16 @@ p.subtitle {
   background: url(../img/triangle.svg);
   background-size: 100% 100%;
   width: 100%;
-  height: 50px;
+  height: 60px;
+  display: block; }
+
+.triangle-green:after {
+  content: '';
+  z-index: 1;
+  background: url(../img/triangle-green.svg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 60px;
   display: block; }
 
 /* --- city --- */
@@ -6727,21 +6737,50 @@ p.subtitle {
   height: 150px;
   position: relative; }
 
-.cos {
+/* --- how does it work? --- */
+.how-intro {
+  margin-top: 90px;
   position: relative; }
-  .cos:before {
-    content: '';
+  .how-intro .decoration {
     position: absolute;
     top: 0;
-    background: url(../img/triangle.svg);
-    background-size: 100% 100%;
-    width: 98%;
-    height: 50px;
-    display: block; }
+    margin: auto;
+    width: 100%;
+    height: 300px; }
+    .how-intro .decoration .cloud2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 150px;
+      z-index: 0; }
+    .how-intro .decoration .rope {
+      margin-top: 120px;
+      position: relative;
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+      z-index: -1; }
+      .how-intro .decoration .rope img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; }
+
+/* --- features --- */
+.features .row {
+  margin-top: 90px; }
+
+/* --- newsletter --- */
+.newsletter {
+  background: #33B3BE; }
 
 /* --- footer --- */
 footer {
-  margin-top: 39px; }
+  margin-top: 39px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  vertical-align: middle;
+  background: white; }
   footer .logo {
     position: relative; }
 
