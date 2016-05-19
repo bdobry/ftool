@@ -6590,7 +6590,9 @@ p.subtitle {
 .hero-unit {
   background-color: white;
   height: 600px;
-  padding-top: 190px; }
+  padding-top: 190px;
+  padding-left: 0;
+  padding-right: 0; }
   .hero-unit .container {
     height: 100%;
     position: relative; }
@@ -6613,7 +6615,8 @@ p.subtitle {
     width: 100%;
     line-height: 22px;
     font-size: 18px;
-    color: #3fc57e; }
+    color: #3fc57e;
+    margin-left: -15px; }
     .hero-unit .stick-bottom:after {
       content: "scroll down";
       display: block; }

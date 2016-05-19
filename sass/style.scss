@@ -65,6 +65,8 @@ p.subtitle {
   background-color: white;
   height: 600px;
   padding-top: 190px;
+  padding-left: 0;
+  padding-right: 0;
   .container {
     height: 100%;
     position: relative;
@@ -91,6 +93,7 @@ p.subtitle {
     line-height: 22px;
     font-size: 18px;
     color: $green;
+    margin-left: -15px;
     &:after {
       content: "scroll down";
       display: block;
@@ -253,28 +256,27 @@ footer {
   }
 }
 
-// over mobile
-@media all and (min-width: 767px) {}
-
-// tablets
-@media all and (max-width: 992px) and (min-width: 768px) {}
-
-// over tablets
-@media all and (min-width: 996px) {}
-
-@media all and (max-width: 1199px) and (min-width: 993px) {}
-
-@media all and (min-width: 1200px) {}
-
-// test for breakpoints
-$mobile: "all and (max-width: 992px) and (min-width: 768px)";
-$tablets: "only screen and (max-width : 320px)";
-$tablets: "only screen and (max-width : 320px)";
-$desktop: "only screen and (max-width : 320px)";
-@media #{$mobile} {
-  //  background: red;
-}
-
+//// over mobile
+//@media all and (min-width: 767px) {}
+//
+//// tablets
+//@media all and (max-width: 992px) and (min-width: 768px) {}
+//
+//// over tablets
+//@media all and (min-width: 996px) {}
+//
+//@media all and (max-width: 1199px) and (min-width: 993px) {}
+//
+//@media all and (min-width: 1200px) {}
+//
+//// test for breakpoints
+//$mobile: "all and (max-width: 992px) and (min-width: 768px)";
+//$tablets: "only screen and (max-width : 320px)";
+//$tablets: "only screen and (max-width : 320px)";
+//$desktop: "only screen and (max-width : 320px)";
+//@media #{$mobile} {
+//  //  background: red;
+//}
 .col-centered {
   float: none;
   margin: 0 auto;
