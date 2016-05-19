@@ -2,7 +2,7 @@
 
 @import "bootstrap";
 @import "bootstrap/theme";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500);
 
 /* --- colors --- */
 
@@ -110,8 +110,14 @@ p.subtitle {
     margin-left: -15px;
     padding-left: 15px;
     &:after {
-      content: "scroll down";
+      content: "";
       display: block;
+      background-image: url(../img/scroll-down.png);
+      width: 50px;
+      height: 25px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -242,8 +248,16 @@ p.subtitle {
 .grass {
   width: 100%;
   background: $green;
-  height: 150px;
   position: relative;
+  .subtitle {
+    color: white;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -287,9 +301,24 @@ p.subtitle {
 /* --- features --- */
 
 .features {
+  margin-bottom: 100px;
   .row {
     margin-top: 90px;
   }
+}
+
+.title {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.caption {
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 22px;
 }
 
 
@@ -297,19 +326,36 @@ p.subtitle {
 
 .newsletter {
   background: #33B3BE;
+  z-index: 1;
+  .title {
+    margin-top: 100px;
+  }
+  .row {
+    margin-top: 20px;
+    color: white;
+  }
 }
 
 
 /* --- footer --- */
 
 footer {
-  margin-top: 39px;
-  padding-top: 40px;
+  margin-top: -90px;
+  padding-top: 10px;
   padding-bottom: 40px;
   vertical-align: middle;
+  opacity: .99;
   background: white;
-  .logo {
-    position: relative;
+  .logo-footer {
+    width: 108px;
+  }
+  .contact {
+    color: $black;
+    p {
+      margin-top: 0;
+      font-size: 14px;
+      font-weight: 300;
+    }
   }
 }
 

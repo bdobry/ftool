@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6620,8 +6620,14 @@ p.subtitle {
     margin-left: -15px;
     padding-left: 15px; }
     .hero-unit .stick-bottom:after {
-      content: "scroll down";
-      display: block; }
+      content: "";
+      display: block;
+      background-image: url(../img/scroll-down.png);
+      width: 50px;
+      height: 25px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto; }
 
 .cloud {
   position: absolute;
@@ -6734,8 +6740,15 @@ p.subtitle {
 .grass {
   width: 100%;
   background: #3fc57e;
-  height: 150px;
   position: relative; }
+  .grass .subtitle {
+    color: white;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 35px;
+    margin-bottom: 0; }
 
 /* --- how does it work? --- */
 .how-intro {
@@ -6767,22 +6780,49 @@ p.subtitle {
         width: 100%; }
 
 /* --- features --- */
-.features .row {
-  margin-top: 90px; }
+.features {
+  margin-bottom: 100px; }
+  .features .row {
+    margin-top: 90px; }
+
+.title {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 0; }
+
+.caption {
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 22px; }
 
 /* --- newsletter --- */
 .newsletter {
-  background: #33B3BE; }
+  background: #33B3BE;
+  z-index: 1; }
+  .newsletter .title {
+    margin-top: 100px; }
+  .newsletter .row {
+    margin-top: 20px;
+    color: white; }
 
 /* --- footer --- */
 footer {
-  margin-top: 39px;
-  padding-top: 40px;
+  margin-top: -90px;
+  padding-top: 10px;
   padding-bottom: 40px;
   vertical-align: middle;
+  opacity: .99;
   background: white; }
-  footer .logo {
-    position: relative; }
+  footer .logo-footer {
+    width: 108px; }
+  footer .contact {
+    color: #4a4a4a; }
+    footer .contact p {
+      margin-top: 0;
+      font-size: 14px;
+      font-weight: 300; }
 
 .col-centered {
   float: none;
