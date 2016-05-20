@@ -96,9 +96,9 @@ p.subtitle {
   line-height: 44px;
   color: white;
   &:hover {
-    font-weight: bolder;
+    color: white;
     text-decoration: none;
-    color: $green/4;
+    background-color: $green/1.5;
   }
 }
 
@@ -516,6 +516,7 @@ input {
   }
   .button {
     font-size: 14px !important;
+    width: 100% !important;
   }
   //
   // city
@@ -552,6 +553,7 @@ input {
       margin-top: 10px;
     }
     img {
+      margin-top: 20px;
       margin-bottom: -50px;
     }
     .button {
