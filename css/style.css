@@ -6641,15 +6641,22 @@ input {
     font-size: 18px;
     color: #3fc57e;
     margin-left: -15px; }
-    .hero-unit .stick-bottom:after {
-      content: "";
-      display: block;
-      background-image: url(../img/scroll-down.png);
-      width: 50px;
-      height: 25px;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto; }
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 50px;
+  height: 25px;
+  background-image: url(../img/scroll-down.png);
+  background-size: cover;
+  background-repeat: none; }
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite; }
 
 .cloud {
   position: absolute;
@@ -6764,7 +6771,7 @@ input {
   position: relative; }
   .grass .subtitle {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 34px;
     font-weight: 300;
     font-style: italic;
@@ -6891,17 +6898,14 @@ input {
     height: 450px;
     padding-top: 100px; }
     .hero-unit .stick-bottom {
-      bottom: -10px;
+      bottom: 23px;
       font-size: 15px; }
-      .hero-unit .stick-bottom:after {
-        margin-top: 5px;
-        width: 40px;
-        height: 20px;
-        background-size: cover;
-        margin-bottom: 0; }
     .hero-unit input {
       width: 100%;
       margin-bottom: 8px; }
+  .arrow {
+    width: 40px;
+    height: 20px; }
   .logo {
     position: absolute;
     top: 10px;
@@ -6916,7 +6920,8 @@ input {
     height: 550px; }
   .grass .subtitle {
     font-size: 16px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    line-height: 22px; }
   .how-intro {
     margin-top: 50px; }
     .how-intro .decoration {
@@ -7034,6 +7039,57 @@ input {
     -webkit-transform: translate3d(1700%, 0, 0);
     -ms-transform: translate3d(1700%, 0, 0);
     transform: translate3d(1700%, 0, 0); } }
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); } }
 
 /* --- LOONEY TUNES --- */
 /* --- That's all Folks! --- */
