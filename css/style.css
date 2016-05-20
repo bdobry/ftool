@@ -6571,6 +6571,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
+h1 {
+  margin-top: 0;
+  font-size: 33px;
+  font-weight: 500; }
+
 h2 {
   font-size: 33px;
   font-weight: 500; }
@@ -6623,10 +6628,6 @@ input {
   .hero-unit .container {
     height: 100%;
     position: relative; }
-    .hero-unit .container h1 {
-      margin-top: 0;
-      font-size: 33px;
-      font-weight: 500; }
   .hero-unit .stick-bottom {
     position: absolute;
     text-align: center;
@@ -6635,8 +6636,7 @@ input {
     line-height: 22px;
     font-size: 18px;
     color: #3fc57e;
-    margin-left: -15px;
-    padding-left: 15px; }
+    margin-left: -15px; }
     .hero-unit .stick-bottom:after {
       content: "";
       display: block;
@@ -6682,8 +6682,7 @@ input {
     text-align: center; }
   .city h2,
   .city p {
-    color: white;
-    top: 20%; }
+    color: white; }
 
 .city-area {
   width: 100%;
@@ -6799,7 +6798,9 @@ input {
 
 /* --- features --- */
 .features {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0; }
   .features .row {
     margin-top: 90px; }
 
@@ -6861,38 +6862,39 @@ input {
   .form input {
     width: 58%; }
 
-@media all and (max-width: 481px) and (min-width: 320px) {
-  .newsletter .title {
-    margin-top: 10px; }
-  .newsletter img {
-    margin-bottom: -50px; }
-  .newsletter .button {
-    float: none !important;
-    text-align: center;
-    margin-bottom: 10px; } }
-
 @media all and (max-width: 720px) and (min-width: 320px) {
-  .subtitle {
-    font-size: 16px !important; }
-  h2 {
-    font-size: 27px; }
+  p.subtitle {
+    font-size: 16px; }
+  h2,
+  h1,
+  .title {
+    font-size: 25px; }
   .cloud,
   .cloud2 {
     height: 50px !important; }
+  .city:before {
+    height: 35px; }
+  .triangle:after,
+  .triangle-green:after {
+    height: 35px; }
   .hero-unit {
-    height: 500px;
+    height: 450px;
     padding-top: 100px; }
-    .hero-unit .container h1 {
-      font-size: 27px; }
     .hero-unit .stick-bottom {
-      bottom: 10px;
+      bottom: -10px;
       font-size: 15px; }
+      .hero-unit .stick-bottom:after {
+        margin-top: 5px;
+        width: 40px;
+        height: 20px;
+        background-size: cover;
+        margin-bottom: 0; }
     .hero-unit input {
       width: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 8px; }
   .logo {
     position: absolute;
-    top: 20px;
+    top: 10px;
     margin: 0;
     left: 0;
     right: 0;
@@ -6915,6 +6917,41 @@ input {
     .form input {
       width: 100%;
       margin-bottom: 10px; } }
+
+@media all and (max-width: 481px) and (min-width: 320px) {
+  h1 {
+    margin-top: 0px; }
+  h1,
+  h2,
+  .title {
+    font-size: 20px;
+    line-height: 24px; }
+  p.subtitle {
+    font-size: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 26px; }
+  .button {
+    font-size: 14px !important; }
+  .city .container {
+    top: 10%; }
+  .city-area {
+    height: 500px; }
+  .how-intro {
+    margin-top: 40px; }
+  .features .row {
+    margin-top: 20px; }
+  .grass .subtitle {
+    font-size: 15px;
+    margin-top: 10px; }
+  .newsletter .title {
+    margin-top: 10px; }
+  .newsletter img {
+    margin-bottom: -50px; }
+  .newsletter .button {
+    float: none !important;
+    text-align: center;
+    margin-bottom: 10px; } }
 
 /* --- overwrites and keyframes --- */
 .col-centered {
