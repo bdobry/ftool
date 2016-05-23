@@ -233,7 +233,8 @@ input {
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 100%;
+    width: auto;
+    height: 35%;
   }
   .city-luft {
     width: 6%;
@@ -260,7 +261,7 @@ input {
   }
   .city-tree {
     position: absolute;
-    width: 5%;
+    height: 15%;
     bottom: 0;
     left: 10%;
     &:nth-of-type(2) {
@@ -270,7 +271,7 @@ input {
       left: 43%;
     }
     &:nth-of-type(4) {
-      left: 77%;
+      left: 75%;
     }
     &:nth-of-type(5) {
       left: 80%;
@@ -595,6 +596,9 @@ input {
   }
   .oversize {
     width: 105%;
+  }
+  .city-area {
+    height: 650px;
   }
 }
 
