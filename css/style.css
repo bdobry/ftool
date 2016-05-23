@@ -6594,7 +6594,8 @@ p.subtitle {
   position: absolute;
   top: 20px;
   left: 70px;
-  z-index: 100; }
+  z-index: 100;
+  width: 150px; }
 
 .button {
   background: #3fc57e;
@@ -6866,6 +6867,9 @@ input {
   text-align: left;
   line-height: 22px; }
 
+.mockup {
+  height: 500px; }
+
 .vtop {
   display: inline-block;
   vertical-align: top;
@@ -6971,6 +6975,7 @@ input {
   .grass .subtitle {
     font-size: 16px;
     margin-top: 20px;
+    margin-bottom: 10px;
     line-height: 22px; }
   .how-intro {
     margin-top: 50px; }
@@ -7033,17 +7038,21 @@ input {
     line-height: 19px; }
   .button {
     width: 100% !important; }
+  .cloud, .cloud2 {
+    opacity: 0.3; }
   .city .container {
     top: 10%; }
   .city-area {
     height: 500px; }
   .how-intro {
     margin-top: 40px; }
-  .features .row {
-    margin-top: 20px; }
-  .features .text-left,
-  .features .text-right {
-    text-align: center; }
+  .features {
+    margin-bottom: 40px; }
+    .features .row {
+      margin-top: 20px; }
+    .features .text-left,
+    .features .text-right {
+      text-align: center; }
   .grass .subtitle {
     font-size: 15px;
     margin-top: 10px; }

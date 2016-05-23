@@ -89,6 +89,7 @@ p.subtitle {
   top: 20px;
   left: 70px;
   z-index: 100;
+  width: 150px;
 }
 
 .button {
@@ -421,6 +422,10 @@ input {
   line-height: 22px;
 }
 
+.mockup {
+  height: 500px;
+}
+
 .vtop {
   display: inline-block;
   vertical-align: top;
@@ -531,6 +536,9 @@ input {
       height: 35px;
     }
   }
+  .logo {
+    //	width: 150px;
+  }
   //
   // hero
   .hero-unit {
@@ -574,6 +582,7 @@ input {
     .subtitle {
       font-size: 16px;
       margin-top: 20px;
+      margin-bottom: 10px;
       line-height: 22px;
     }
   }
@@ -669,6 +678,10 @@ input {
   .button {
     width: 100% !important;
   }
+  .cloud, .cloud2 {
+//    display: none;
+    opacity: 0.3;
+  }
   //
   // city
   .city {
@@ -685,6 +698,7 @@ input {
     margin-top: 40px;
   }
   .features {
+    margin-bottom: 40px;
     .row {
       margin-top: 20px;
     }
