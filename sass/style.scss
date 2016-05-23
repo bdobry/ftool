@@ -284,6 +284,19 @@ input {
     @extend .lantern;
     left: 75%;
   }
+  .boy,
+  .girl {
+    position: absolute;
+    height: 12%;
+    bottom: 6%;
+    left: 9%;
+    z-index: 3;
+    -webkit-animation: cyclist 20s linear infinite;
+    animation: cyclist 20s linear infinite;
+  }
+  .girl {
+    left: 1%;
+  }
   .city-tree {
     position: absolute;
     height: 14%;
@@ -759,6 +772,32 @@ input {
   }
   58% {
     top: 10%;
+  }
+  100% {
+    -webkit-transform: translate3d(1700%, 0, 0);
+    -ms-transform: translate3d(1700%, 0, 0);
+    transform: translate3d(1700%, 0, 0);
+  }
+}
+
+@-webkit-keyframes cyclist {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(1700%, 0, 0);
+    -ms-transform: translate3d(1700%, 0, 0);
+    transform: translate3d(1700%, 0, 0);
+  }
+}
+
+@keyframes cyclist {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
   100% {
     -webkit-transform: translate3d(1700%, 0, 0);
