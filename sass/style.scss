@@ -119,6 +119,13 @@ input {
   border-radius: 3px;
 }
 
+.shake {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 
 /* --- hero --- */
 
@@ -678,8 +685,9 @@ input {
   .button {
     width: 100% !important;
   }
-  .cloud, .cloud2 {
-//    display: none;
+  .cloud,
+  .cloud2 {
+    //    display: none;
     opacity: 0.3;
   }
   //
@@ -888,6 +896,26 @@ $bnc: -5px;
     -ms-transform: translateY($bnc);
     -webkit-transform: translateY($bnc);
     transform: translateY($bnc);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
 

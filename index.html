@@ -310,48 +310,46 @@ snart app'en er klar</h2>
   
   <script> 
     var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: "onEnter",
-        offset: 200,
-      }
+
     });    
     
     $('.mockup').each(function(){
         var mockup = this;
-        
-//        var cloudsFeatures = new TimelineMax().add([
-//            TweenMax.to(mockup, 2, {left: "-=400px", opacity: 0.1, scale: .5, ease: Back.easeOut})
-//        ]);
-        
-//      TweenMax.staggerFromTo('.cloud', 0.5,
-//        {
-//          scale: 1,
-//        },
-//        {
-//          backgroundColor: 'rgb(255, 39, 46)',
-//          scale: 5,
-//          rotation: 360
-//        },
-//        0.2
                              
-        var cloudsFeatures = new TimelineMax().add([
+        var tweenMockup = new TimelineMax().add([
             TweenMax.fromTo(mockup, 0.5, {opacity: 0.1, scale:.7},{opacity:1,scale:1}, 0.2)
         ]);
-//        var tweenStrong = new TimelineMax()
-//            .to(currentStrong, 0.25, {css: {opacity:0, textShadow:"0px 0px 20px rgba(18, 112, 200, 1)"}});
-//        
-//        var scene = new ScrollScene({triggerElement: currentStrong, offset: -$(window).height()*0.7})
-//            .setTween(tweenStrong)
-//            .addTo(controller);
         
         new ScrollMagic.Scene({
         triggerElement: mockup,
         duration: '50%',
+        triggerHook: "onEnter",
+        offset: 200,
         })
-        .setTween(cloudsFeatures)
+        .setTween(tweenMockup)
         .addTo(controller);    
     });
-  
+    
+    $('.cloud').each(function(){
+        var cloud = this;
+                             
+//        var tweenCloud = new TimelineMax().add([
+//          TweenMax.to(cloud, 0.5, {left: "+=400px", opacity: 0.1, scale: .5, ease: Back.easeOut}, 0.2)
+//        ]);
+      
+        var tweenCloud = new TimelineMax().add([
+          TweenMax.to(cloud, 0.5, {left: "+=400px", opacity: 0.1, scale: .5, ease: Back.easeOut}, 0.2)
+        ]);
+        
+        new ScrollMagic.Scene({
+        triggerElement: cloud,
+        duration: '200%',
+        triggerHook: "onLeave",
+          offset: -100
+        })
+        .setTween(tweenCloud)
+        .addTo(controller);    
+    });
   
   </script>
 </body>
