@@ -223,7 +223,6 @@ input {
 .city-area {
   width: 100%;
   overflow: hidden;
-  overflow-x: hidden;
   position: relative;
   background: #33B3BE;
   height: 750px;
@@ -234,7 +233,8 @@ input {
     left: 0;
     margin: auto;
     width: auto;
-    height: 35%;
+    height: 37%;
+    z-index: 1;
   }
   .city-luft {
     width: 6%;
@@ -259,19 +259,48 @@ input {
       backface-visibility: hidden;
     }
   }
+  .blue-house {
+    position: absolute;
+    height: 23%;
+    bottom: 7%;
+    left: 60%;
+    z-index: 2;
+  }
+  .red-house {
+    position: absolute;
+    height: 16%;
+    bottom: 10%;
+    left: 20%;
+    z-index: 2;
+  }
+  .lantern {
+    position: absolute;
+    height: 18%;
+    bottom: 5%;
+    left: 15%;
+    z-index: 3;
+  }
+  .lantern2 {
+    @extend .lantern;
+    left: 75%;
+  }
   .city-tree {
     position: absolute;
-    height: 15%;
+    height: 14%;
     bottom: 0;
     left: 10%;
+    z-index: 4;
     &:nth-of-type(2) {
       left: 37%;
+      height: 11%;
     }
     &:nth-of-type(3) {
       left: 43%;
+      height: 11%;
     }
     &:nth-of-type(4) {
       left: 75%;
+      height: 11%;
     }
     &:nth-of-type(5) {
       left: 80%;
