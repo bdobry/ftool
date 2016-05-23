@@ -11,7 +11,7 @@
                 "outputStyle": "nested"
             },
             "linting.collapsed": true,
-            "custom.work.toggleToolbar": true
+            "custom.work.toggleToolbar": false
         },
         "sass/bootstrap/bootstrap.scss": {
             "sass.enabled": true,

@@ -364,6 +364,7 @@ input {
   text-align: left;
   font-size: 30px;
   margin-top: 0;
+  //  padding-top: 15px;
 }
 
 .caption {
@@ -372,6 +373,16 @@ input {
   font-weight: 300;
   text-align: left;
   line-height: 22px;
+}
+
+.vtop {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  margin-top: 30px !important;
+  .title {
+    margin-top: 15px;
+  }
 }
 
 
@@ -528,6 +539,9 @@ input {
         height: 220px;
       }
     }
+  }
+  .vtop {
+    margin-top: 0px !important;
   }
   .features {
     margin-bottom: 100px;
