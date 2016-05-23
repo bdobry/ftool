@@ -303,6 +303,10 @@ input {
     bottom: 0;
     left: 10%;
     z-index: 4;
+    transition: all .3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
     &:nth-of-type(2) {
       left: 37%;
       height: 11%;
@@ -366,7 +370,6 @@ input {
     margin: auto;
     width: 100%;
     height: 200px;
-    //        background: lightgrey;
     .cloud2 {
       position: absolute;
       top: 0;
@@ -712,6 +715,9 @@ input {
       float: none !important;
       text-align: center;
       margin-bottom: 10px;
+    }
+    .text-right {
+      text-align: center;
     }
   }
 }

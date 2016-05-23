@@ -6767,7 +6767,10 @@ input {
     height: 14%;
     bottom: 0;
     left: 10%;
-    z-index: 4; }
+    z-index: 4;
+    transition: all 0.3s ease-in-out; }
+    .city-area .city-tree:hover {
+      transform: scale(1.2); }
     .city-area .city-tree:nth-of-type(2) {
       left: 37%;
       height: 11%; }
@@ -7052,7 +7055,9 @@ input {
   .newsletter .button {
     float: none !important;
     text-align: center;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .newsletter .text-right {
+    text-align: center; } }
 
 /* --- overwrites and keyframes --- */
 .col-centered {
