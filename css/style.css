@@ -6835,6 +6835,9 @@ input {
   .vtop .title {
     margin-top: 15px; }
 
+.oversize {
+  width: 113%; }
+
 /* --- newsletter --- */
 .newsletter {
   background: #33B3BE;
@@ -6938,6 +6941,8 @@ input {
       .how-intro .decoration .rope {
         margin-top: 48px;
         height: 220px; }
+  .oversize {
+    width: 100%; }
   .vtop {
     margin-top: 0px !important; }
   .features {
@@ -6946,6 +6951,8 @@ input {
       margin-top: 40px; }
     .features img {
       margin-bottom: 20px; }
+  .test {
+    width: 100%; }
   .newsletter .container,
   .footer .container {
     width: 100%;
@@ -6966,7 +6973,9 @@ input {
       float: right; }
     .form input {
       width: 100%;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .oversize {
+    width: 105%; } }
 
 @media all and (max-width: 481px) and (min-width: 100px) {
   h1 {
@@ -6991,6 +7000,9 @@ input {
     margin-top: 40px; }
   .features .row {
     margin-top: 20px; }
+  .features .text-left,
+  .features .text-right {
+    text-align: center; }
   .grass .subtitle {
     font-size: 15px;
     margin-top: 10px; }

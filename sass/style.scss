@@ -385,6 +385,10 @@ input {
   }
 }
 
+.oversize {
+  width: 113%;
+}
+
 
 /* --- newsletter --- */
 
@@ -540,6 +544,9 @@ input {
       }
     }
   }
+  .oversize {
+    width: 100%;
+  }
   .vtop {
     margin-top: 0px !important;
   }
@@ -551,6 +558,9 @@ input {
     img {
       margin-bottom: 20px;
     }
+  }
+  .test {
+    width: 100%;
   }
   //
   // newslette + footer 
@@ -582,6 +592,9 @@ input {
       width: 100%;
       margin-bottom: 10px;
     }
+  }
+  .oversize {
+    width: 105%;
   }
 }
 
@@ -625,6 +638,10 @@ input {
   .features {
     .row {
       margin-top: 20px;
+    }
+    .text-left,
+    .text-right {
+      text-align: center;
     }
   }
   //
